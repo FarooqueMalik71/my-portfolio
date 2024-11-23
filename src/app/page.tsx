@@ -32,7 +32,7 @@ export default function Home() {
     <Skills/>
     <Contact/>
     <About/>
-   
+    console.log(process.env.NEXT_PUBLIC_API_URL);
    
    </main>
   );
