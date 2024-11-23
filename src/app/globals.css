@@ -2,20 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  body {
+    color: white;
+    background-color: black;
+  
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
+@layer components {
+  .menuLink {
+    @apply cursor-pointer hover:text-accent
+  }
+  .tags {
+    background-color:#0abde3;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+display: inline-block;
+color: white;
+font-size: 12px;
+  }
+  .tags:last-child{
+    margin-right: 0;
+  }
+  .tags:nth-child(2){
+    background-color: #a55eea;
+  }
+  .tags:nth-child(3){
+    background-color: #ea5e5e;
+  }
+  .tags:nth-child(4){
+    background-color: #5eea81;
+  }
+  .tags:nth-child(4){
+    background-color: #eada5e;
+  }
+  .tags:nth-child(5){
+    background-color: #ea5e83;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+  .margin-1{
+    margin-top: 80px;
+  }
+  .text-4xl{
+    margin-bottom: 30px;
+  }
+  .skill-1{
+
+    align-items: center;
+  }
+
+
+  img {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+img:hover {
+    transform: rotateY(180deg);
+}
+
+/* Apply Fade-in and Pop-up Hover Effect to All Text */
+*:is(h1, h2, h3, h4, h5, h6, p, span,  li, strong, em) {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 5;
+    transform: translateY(10px);
+    animation: fadeIn 1s ease forwards; /* Smooth fade-in on load */
+}
+
+/* Pop-up Hover Effect */
+*:is(h1, h2, h3, h4, h5, h6, p, span, a, li, strong, em):hover {
+    transform: scale(1.05); /* Creates pop-up effect on hover */
+}
 }
