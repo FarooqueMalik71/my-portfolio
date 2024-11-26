@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         {/* Footer text */}
-        <div className='mt-16 py-6 text-center bg-Byzantine'>
+        <div className='py-6 text-center bg-Byzantine'>
           © Farooque | All Rights Reserved 2025.
         </div>
       </div>
