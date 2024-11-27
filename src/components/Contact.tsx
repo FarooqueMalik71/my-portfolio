@@ -11,12 +11,12 @@ const Contact = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <span className="mb-4 block text-base font-semibold text-primary" data-aos="zoom-in-up">
-                <Heading title='Contact us' />
+                  <Heading title='Contact us' />
                 </span>
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]" data-aos="zoom-in-up">
                   GET IN TOUCH WITH US
                 </h2>
-             
+
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                     <svg
@@ -76,7 +76,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white" data-aos="zoom-in-up">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6"data-aos="zoom-in-up">
+                    <p className="text-base text-body-color dark:text-dark-6" data-aos="zoom-in-up">
                       (+92)3133850871
                     </p>
                   </div>
@@ -114,7 +114,7 @@ const Contact = () => {
 
 
 
-                  
+
                 </div>
               </div>
             </div>
@@ -126,18 +126,21 @@ const Contact = () => {
                     name="name"
                     placeholder="Your Name"
                   />
+
                   <ContactInputBox
-                    type="text"
+                    type="email"
                     name="email"
                     placeholder="Your Email"
                   />
+
                   <ContactInputBox
-                    type="text"
+                    type="tel"
                     name="phone"
                     placeholder="Your Phone"
                   />
+
                   <ContactTextArea
-                    row="6"
+                    rows={6}  
                     placeholder="Your Message"
                     name="details"
                     defaultValue=""
@@ -970,33 +973,55 @@ const Contact = () => {
 
 export default Contact;
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+
+
+type ContactTextAreaProps = {
+  rows: number;             
+  placeholder: string;       
+  name: string;              
+  defaultValue?: string;     
+};
+
+const ContactTextArea: React.FC<ContactTextAreaProps> = ({
+  rows,
+  placeholder,
+  name,
+  defaultValue,
+}) => {
   return (
-    <>
-      <div className="mb-6">
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
+    <div className="mb-6">
+      <textarea
+        rows={rows}
+        placeholder={placeholder}
+        name={name}
+        className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+        defaultValue={defaultValue}
+      />
+    </div>
   );
 };
 
-const ContactInputBox = ({ type, placeholder, name }) => {
+type ContactInputBoxProps = {
+  type: string;            
+  placeholder: string;     
+  name: string;             
+};
+
+const ContactInputBox: React.FC<ContactInputBoxProps> = ({
+  type,
+  placeholder,
+  name,
+}) => {
   return (
-    <>
-      <div className="mb-6">
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-        />
-      </div>
-    </>
+    <div className="mb-6">
+      <input
+        type={type}
+        placeholder={placeholder}
+        name={name}
+        className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+      />
+    </div>
   );
 };
+
+export { ContactTextArea, ContactInputBox };
