@@ -1002,7 +1002,7 @@ const ContactTextArea: React.FC<ContactTextAreaProps> = ({
 };
 
 type ContactInputBoxProps = {
-  type: string;            
+  type: string;             // 'type' should be a string (e.g., "text", "email", "password")
   placeholder: string;     
   name: string;             
 };
