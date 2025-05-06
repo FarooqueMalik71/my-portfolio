@@ -6,13 +6,13 @@
   body {
     color: white;
     background-color: black;
-  
+    font-family: 'Poppins', 'Arial', sans-serif;
 
   }
 }
 @layer components {
   .menuLink {
-    @apply cursor-pointer hover:text-accent
+    @apply cursor-pointer rounded px-4 py-2 text-sm text-white  hover:bg-gradient-to-r hover:from-purple-500 hover:to-slate-400 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out;
   }
   .tags {
     background-color:#0abde3;

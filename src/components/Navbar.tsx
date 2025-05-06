@@ -13,7 +13,11 @@ function Navbar() {
   return (
     <div className="container px-6 pt-8">
       <div className="flex justify-between items-center">
-        <div className="text-xl font-medium">MY Portfolio</div>
+        <div className="bg-gradient-to-r from-violet-500 to-purple-500 text-transparent bg-clip-text">My
+          <span className="text-xl font-medium text-violet-600 dark:text-violet-400" >
+            -Portfolio
+          </span>
+        </div>
 
         {/* Desktop Menu */}
         <ul className="gap-10 lg:gap-16 hidden text-lg md:flex">
@@ -44,7 +48,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="border border-accent absolute top-16 right-4 dark:bg-gray-800 p-4 shadow-lg rounded-lg flex flex-col items-start space-y-4 md:hidden z-50">
+        <div className="border border-violet-500 absolute top-16 right-4 dark:bg-gray-800 p-4 shadow-lg rounded-lg flex flex-col items-start space-y-4 md:hidden z-50">
           <a href="#hero" onClick={() => setMenuOpen(false)} className="menuLink">
             Home
           </a>
