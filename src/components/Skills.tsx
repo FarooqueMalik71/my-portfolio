@@ -26,8 +26,13 @@ const skillCategories = [
     title: "Backend & Tools",
     skills: [
       { name: "Node.js", icon: "🟢", color: "from-accent4 to-accent10" },
+<<<<<<< HEAD
+      
+      { name: "Sanity", icon: "🔒", color: "from-accent6 to-accent3" },
+=======
       { name: "Express.js", icon: "🚂", color: "from-gray-500 to-gray-700" },
       { name: "MongoDB", icon: "🍃", color: "from-accent4 to-accent10" },
+>>>>>>> a1a35bfcb8c6be3e677c5d49c1f139c2c871ae8a
       { name: "Git & GitHub", icon: "📚", color: "from-accent5 to-accent8" },
     ]
   },
@@ -35,9 +40,16 @@ const skillCategories = [
     title: "AI & Emerging Tech",
     skills: [
       { name: "Agentic AI", icon: "🤖", color: "from-accent6 to-accent9", isNew: true },
+<<<<<<< HEAD
+      
+      { name: "OpenAI API", icon: "🔮", color: "from-accent4 to-accent7" },
+      { name: "OpenRouter API", icon: "🔮", color: "from-accent4 to-accent7" },
+      
+=======
       { name: "Machine Learning", icon: "🧠", color: "from-accent2 to-accent6" },
       { name: "OpenAI API", icon: "🔮", color: "from-accent4 to-accent7" },
       { name: "LangChain", icon: "🔗", color: "from-accent3 to-accent6" },
+>>>>>>> a1a35bfcb8c6be3e677c5d49c1f139c2c871ae8a
     ]
   }
 ];
@@ -101,7 +113,12 @@ function Skills() {
             <div>
               <p className='text-gray-300 text-lg leading-relaxed'>
                 Recently, I've expanded my expertise into <span className="text-accent font-semibold">Agentic AI</span> and emerging technologies. 
+<<<<<<< HEAD
+                I specialize in building intelligent applications using OpenAI APIs, chatbots, agentic AI systems, and more. 
+                My goal is to create innovative solutions that leverage AI to enhance user interactions and automate complex tasks 
+=======
                 I specialize in building intelligent applications using OpenAI APIs, LangChain, and machine learning concepts, 
+>>>>>>> a1a35bfcb8c6be3e677c5d49c1f139c2c871ae8a
                 combining traditional web development with cutting-edge AI capabilities.
               </p>
             </div>
@@ -125,7 +142,11 @@ function Skills() {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-accent mb-2">75%</div>
+<<<<<<< HEAD
+              <div className="text-gray-400">AI & Agentic_AI</div>
+=======
               <div className="text-gray-400">AI & ML</div>
+>>>>>>> a1a35bfcb8c6be3e677c5d49c1f139c2c871ae8a
               <div className="w-full bg-gray-700 rounded-full h-2 mt-2">
                 <div className="bg-gradient-accent h-2 rounded-full animate-pulse-slow" style={{width: '75%'}}></div>
               </div>

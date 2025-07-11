@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 import { MdOutlineMail } from "react-icons/md";
 
@@ -20,7 +20,15 @@ const Footer = () => {
           >
             <FaInstagram size={40} />
           </a>
-
+          {/* twitter Link */}
+          <a
+            href="https://x.com/FarooqueMalik71"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400"
+          >
+            <FaTwitter size={40} />
+          </a>
           {/* LinkedIn Link */}
           <a
             href="https://www.linkedin.com/in/farooque-malik871/"
