@@ -28,7 +28,11 @@ const About = () => {
             <p className='text-gray-300 leading-relaxed'>
               Recently, I've expanded my expertise into <span className="text-accent font-semibold">Agentic AI</span> and modern AI frameworks. 
               I specialize in building intelligent applications using <span className="text-accent font-semibold">OpenAI APIs</span>, 
+<<<<<<< HEAD
                 combining traditional web development 
+=======
+              <span className="text-accent font-semibold"> LangChain</span>, and machine learning concepts, combining traditional web development 
+>>>>>>> a1a35bfcb8c6be3e677c5d49c1f139c2c871ae8a
               with cutting-edge AI capabilities.
             </p>
           </div>

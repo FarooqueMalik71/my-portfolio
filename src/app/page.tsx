@@ -24,7 +24,11 @@ export default function Home() {
 
   
   return (
+<<<<<<< HEAD
    <main className="bg-gradient-dark overflow-x-hidden min-h-screen">
+=======
+   <main className="bg-gradient-dark min-h-screen">
+>>>>>>> a1a35bfcb8c6be3e677c5d49c1f139c2c871ae8a
     <Hero/>
     <Projects/>
     <Skills/>

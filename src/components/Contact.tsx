@@ -45,7 +45,11 @@ const Contact = () => {
                         Location
                       </h4>
                       <p className="text-gray-300" data-aos="fade-right" data-aos-delay="500">
+<<<<<<< HEAD
                         Karachi, Sindh, Pakistan
+=======
+                        Mirpurkhas, Sindh, Pakistan
+>>>>>>> a1a35bfcb8c6be3e677c5d49c1f139c2c871ae8a
                       </p>
                     </div>
                   </div>
