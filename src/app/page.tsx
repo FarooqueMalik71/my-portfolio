@@ -18,22 +18,18 @@ export default function Home() {
       mirror: true,
       anchorPlacement: "bottom-bottom",
       offset: 160,
-
     });
     AOS.refresh()
   }, []);
 
   
   return (
-   <main>
-    
+   <main className="bg-gradient-dark min-h-screen">
     <Hero/>
     <Projects/>
     <Skills/>
-    <Contact/>
     <About/>
-   
-   
+    <Contact/>
    </main>
   );
 }
