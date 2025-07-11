@@ -97,6 +97,8 @@ function Navbar() {
           </div>
         </div>
 
+
+
         {/* Mobile Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
           menuOpen 
