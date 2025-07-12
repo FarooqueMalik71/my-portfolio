@@ -9,7 +9,7 @@ const data = [
         desc: "A fully responsive and dynamic e-commerce store built with Next.js, Tailwind CSS, and Sanity CMS. Features modern UI/UX, SSR & SSG performance, real-time CMS integration, and seamless multi-device compatibility.",
         img: "/ecomerce.png",
         tags: ["Next.js", "Tailwind CSS", "Sanity CMS", "Responsive", "Hackathon"],
-        link: "https://your-ecommerce-project.vercel.app/",
+        link: "https://hackathone-151725.vercel.app/",
         isNew: true,
         category: "E-Commerce"
     }, {
